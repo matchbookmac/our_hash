@@ -19,4 +19,8 @@ class OurHash
     @keys.push(key)
     @values.push(value)
   end
+
+  define_method(:has_key?) do |key|
+    @keys.include?(key)
+  end
 end
